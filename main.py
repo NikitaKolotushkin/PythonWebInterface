@@ -8,9 +8,9 @@ import eel
 @eel.expose
 def Converter(number):
 
-    binary = bin(number).replace("0b", "")
-    octal = oct(number).replace("0o", "")
-    hexadecimal = str(hex(number).replace("0x", "")).upper()
+    binary = bin(int(number)).replace("0b", "")
+    octal = oct(int(number)).replace("0o", "")
+    hexadecimal = str(hex(int(number)).replace("0x", "")).upper()
 
     return number
 

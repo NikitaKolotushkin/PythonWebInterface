@@ -12,9 +12,9 @@
     <body>
         <div class="body__main">
             <input type="text" id="input_number" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" placeholder="Enter a number in decimal notation:">
-            <button type="submit" id="calculate_button">Calculate!</button>
+            <button id="calculate_button" onclick="get_numbers()">Calculate!</button>
         </div>
-        <div class="output-info">
+        <div id="output-info">
 
         </div>
        
@@ -22,14 +22,16 @@
     <script type="text/javascript">
         async function get_numbers() {
             let place = document.getElementById('input_number').value;
+            console.log(place);
 
-            let result = await eel.Converter(number)();
-            document.getElementById('output-info').innerHTML = result();
-
-            jQuery('calculate_button').on('click', function() {
-                Converter();
-            });
+            let result = await eel.Converter(place)();
+            document.getElementById('output-info').innerHTML = result;
         }
+
+        // jQuery('#calculate_button').on('click', function() {
+        //     get_numbers();
+        // });
+        
     </script>
     </body>
 </html>
