@@ -21,7 +21,7 @@ body {
     border: 3px solid rgb(60, 225, 225);
     width: 300px;
     height: 50px;
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
     font-size: 16px;
     position: absolute;
@@ -43,7 +43,7 @@ body {
     height: 50px;
     border: 3px solid rgb(60, 225, 225);
     border-radius: 5px;
-    margin-top: 120px;
+    margin-top: 130px;
     position: absolute;
     right: 50%;
     left: 50%;
@@ -57,4 +57,14 @@ body {
 
 #calculate_button:hover {
     cursor: pointer;
+}
+
+.output-info {
+    border: 2px solid red;
+    max-width: 100%;
+    height: 65vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
