@@ -21,7 +21,6 @@
     <script type="text/javascript">
         async function get_numbers() {
             let place = document.getElementById('input_number').value;
-            console.log(place);
 
             let result = await eel.Converter(place)();
             document.getElementById('output-info').innerHTML = result;
