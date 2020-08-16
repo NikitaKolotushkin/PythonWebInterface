@@ -6,18 +6,22 @@
 }
 
 body {
+    height: 100vh;
     color: #fff;
-    background: rgba(0,1,17,1);
-    background: -moz-linear-gradient(top, rgba(0,1,17,1) 0%, rgba(51,51,51,1) 100%);
+    background: #111;
+    background: -webkit-linear-gradient(to top, #222, #111);
+    background: linear-gradient(to top, #222, #111);
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
 #input_number {
     display: block;
-    border: none;
+    border: 3px solid rgb(60, 225, 225);
     width: 300px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
     font-size: 16px;
     position: absolute;
@@ -25,8 +29,23 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
+    background: transparent;
+    outline: none;
 }
 
-#input_number {
+#input_number::placeholder, INPUT[type="text"] {
+    color: #fff;
+}
+
+#calculate_button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin-top: 120px;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     outline: none;
 }

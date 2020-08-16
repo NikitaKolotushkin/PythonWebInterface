@@ -9,6 +9,9 @@
         <script src="eel.js"></script>
     </head>
     <body>
-        <input type="text" id="input_number" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" placeholder="Enter a number in decimal notation:">
+        <div class="body__main">
+            <input type="text" id="input_number" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" placeholder="Enter a number in decimal notation:">
+            <button type="submit" id="calculate_button">Calculate!</button>
+        </div>
     </body>
 </html>
