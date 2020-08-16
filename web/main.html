@@ -18,7 +18,6 @@
 
         </div>
        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
         async function get_numbers() {
             let place = document.getElementById('input_number').value;
@@ -26,12 +25,7 @@
 
             let result = await eel.Converter(place)();
             document.getElementById('output-info').innerHTML = result;
-        }
-
-        // jQuery('#calculate_button').on('click', function() {
-        //     get_numbers();
-        // });
-        
+        }        
     </script>
     </body>
 </html>
