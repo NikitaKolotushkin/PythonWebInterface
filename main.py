@@ -3,7 +3,7 @@
 
 
 import eel
-
+eel.init("web")
 
 # @eel.expose
 def Converter(number):
@@ -30,5 +30,5 @@ def Octalf(number):
 def hexadecimal(number):
     return str(hex(int(number)).replace("0x", "")).upper()
 
-eel.init("web")
+
 eel.start("main.html", size=(700, 700))
