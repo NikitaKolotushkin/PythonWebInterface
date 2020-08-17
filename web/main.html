@@ -15,15 +15,25 @@
             <button id="calculate_button" onclick="get_numbers()">Calculate!</button>
         </div>
         <div id="output-info">
-
+            <ul>
+                <li><h3>Bin system: <span id="output-info__bin"></span></h3></li>
+                <li><h3>Oct system: <span id="output-info__oct"></span></h3></li>
+                <li><h3>Hex system: <span id="output-info__hex"></span></h3></li>
+            </ul>
         </div>
        
     <script type="text/javascript">
         async function get_numbers() {
             let place = document.getElementById('input_number').value;
 
-            let result = await eel.Converter(place)();
-            document.getElementById('output-info').innerHTML = result;
+            let result_bin = await eel.binary(place)();
+            document.getElementById('output-info__bin').innerHTML = result_bin;
+            let result_oct = await eel.Octalf(place)();
+            document.getElementById('output-info__oct').innerHTML = result_oct;
+            let result_hex = await eel.hexadecimal(place)();
+            
+            
+            document.getElementById('output-info__hex').innerHTML = result_hex;
         }        
     </script>
     </body>

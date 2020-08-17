@@ -5,7 +5,7 @@
 import eel
 
 
-@eel.expose
+# @eel.expose
 def Converter(number):
 
     binary = bin(int(number)).replace("0b", "")
@@ -17,6 +17,18 @@ def Converter(number):
     # print("Bin system: ", binary)
     # print("Oct system: ", octal)
     # print("Hex system: ", hexadecimal)
+
+@eel.expose
+def binary(number):
+    return bin(int(number)).replace("0b", "")
+
+@eel.expose
+def Octalf(number):
+    return oct(int(number)).replace("0o", "")
+
+@eel.expose
+def hexadecimal(number):
+    return str(hex(int(number)).replace("0x", "")).upper()
 
 eel.init("web")
 eel.start("main.html", size=(700, 700))
