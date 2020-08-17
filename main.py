@@ -14,7 +14,7 @@ def binary(number):
 
 
 @eel.expose
-def Octalf(number):
+def octal(number):
     return oct(int(number)).replace("0o", "")
 
 
