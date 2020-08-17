@@ -4,10 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="favicon.png" type="image/png">
-        <script src="eel.js"></script>   
+         
         <link rel="stylesheet" href="style.css">
         <title>Python Web Interface App</title>
-        
     </head>
     <body>
         <div class="body__main">
@@ -16,26 +15,12 @@
         </div>
         <div id="output-info">
             <ul>
-                <li><h3>Bin system: <span id="output-info__bin"></span></h3></li>
-                <li><h3>Oct system: <span id="output-info__oct"></span></h3></li>
-                <li><h3>Hex system: <span id="output-info__hex"></span></h3></li>
+                <li><p>Bin system: <span id="output-info__bin"></span></p></li>
+                <li><p>Oct system: <span id="output-info__oct"></span></p></li>
+                <li><p>Hex system: <span id="output-info__hex"></span></p></li>
             </ul>
         </div>
-       
-    <script src="script.js"></script>    
-    <script type="text/javascript">
-        async function get_numbers() {
-            let place = document.getElementById('input_number').value;
-
-            let result_bin = await eel.binary(place)();
-            document.getElementById('output-info__bin').innerHTML = result_bin;
-            let result_oct = await eel.Octalf(place)();
-            document.getElementById('output-info__oct').innerHTML = result_oct;
-            let result_hex = await eel.hexadecimal(place)();
-            
-            
-            document.getElementById('output-info__hex').innerHTML = result_hex;
-        }        
-    </script>
+    <script src="eel.js"></script>     
+    <script src="script.js"></script>
     </body>
 </html>

@@ -23,4 +23,4 @@ def hexadecimal(number):
     return str(hex(int(number)).replace("0x", "")).upper()
 
 
-eel.start("main.html", size=(700, 700))
+eel.start("main.html", size=(700, 400))

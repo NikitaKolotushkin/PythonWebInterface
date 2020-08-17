@@ -60,12 +60,36 @@ body {
 }
 
 #output-info {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     max-width: 100%;
-    height: 65vh;
+    height: 55vh;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: left;
+    font-size: 18px;
+}
+
+#output-info ul {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+#output-info ul li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+#output-info ul li p {
+    font-weight: 900;
+    color: rgb(60, 225, 225);
+}
+
+#output-info ul li p span {
+    color: #fff;
+    padding-left: 10px;
+    font-weight: 300;
 }
