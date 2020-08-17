@@ -5,7 +5,7 @@
 import eel
 
 
-eel.init("web")
+eel.init("web")  # EEL initialization
 
 
 @eel.expose
@@ -23,4 +23,4 @@ def hexadecimal(number):
     return str(hex(int(number)).replace("0x", "")).upper()
 
 
-eel.start("main.html", size=(700, 400))
+eel.start("main.html", size=(700, 400))  # Starting the App
