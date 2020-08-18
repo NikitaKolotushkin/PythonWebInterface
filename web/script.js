@@ -8,4 +8,4 @@ async function get_numbers() {
     document.getElementById('output-info__bin').innerHTML = result_bin;
     document.getElementById('output-info__oct').innerHTML = result_oct;
     document.getElementById('output-info__hex').innerHTML = result_hex;
-}   
+};   
